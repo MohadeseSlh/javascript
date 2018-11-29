@@ -1,0 +1,26 @@
+<!--5.Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.-->
+<html lang="en">
+    <head>
+        <title>tamrin</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+    </head>
+    <body>
+        <p id="demo"></p>
+
+    
+<script>
+  for (var year = 2014; year <= 2050; year++) {
+/* year,0,1 means jan 1 2014*/      
+    var d = new Date(year, 0, 1);
+/*getDay returns the weekday of a date as a number . 0 means sunday*/
+    if (d.getDay() === 0) {
+        document.getElementById("demo").innerHTML =('The first day of ' + year + ' is a Sunday');
+    }
+  }
+  </script>              
+        </body>
+        </html>
+
+                    
